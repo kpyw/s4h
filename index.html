@@ -3,7 +3,8 @@
 <head>
   <title>Track your strength training</title>
 <link href="bootstrap.min.css" rel="stylesheet" media="screen">
-<link rel="stylesheet" type="text/css" href="jumbotron-narrow.css">
+<!-- <link rel="stylesheet" type="text/css" href="jumbotron-narrow.css"> -->
+$('.dropdown-toggle').dropdown()
 </head>
 <h1>STRENGTH</h1>
 <nav class="navbar navbar-default" role="navigation">
@@ -22,7 +23,7 @@
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Colors</a></li>
-      <li><a href="#">Link</a></li>
+      <li><a href="#">Quick Track</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Exercises <b class="caret"></b></a>
         <ul class="dropdown-menu">
@@ -56,19 +57,85 @@
 </nav>
 <body>
 <div class="container">
-<div class="col-md-8">
-<h1>STRENGTH</h1>
+      <h1>STRENGTH</h1>
+<!-- <span class="glyphicon glyphicon-search"></span> -->
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class=" thumbnail">
+        <img src="DSC_6560.jpg" alt="Shoulder Pull Back" style="width: 300px; height=200px;" class="img-thumbnail">
+      <div class="caption">
+        <h3>Shoulder Pull Back</h3>
+        <p>Grasp the ends of the band in front of you at shoulder height, and take up the slack. Pull the band outward, keeping your elbows straight and pinch your shoulder blades together. Slowly return.
+          </p>
+        <p>TIP: Keep your lower back straight. Don&apos;t hold your breath, and relax after each repetition.</p>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+            Reps <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">1</a></li>
+              <li>1</li>
+              <li>2</li>
+              <li>3</li>
+              <li>4</li>
+              <li>5</li>
+              <li>6</li>
+
+              <li class="divider"></li>
+              <li>15</li>
+            </ul>
+          </div>
+          <p></p>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default btn-lg">
+            <input type="date"></input>
+             <!-- <span class="glyphicon glyphicon-calendar"></span>   -->
+             Date
+            </button>
+          </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-md-4" >
+      <div class="thumbnail">
+      <img src="DSC_6384.jpg" alt="Seated Row" style="width: 300px; height=200px;" class="img-thumbnail">
+      <div class="caption">
+        <h3> Seated Row </h3>
+        <p> Extend your legs and wrap middle of band around feet. Be sure band is secure by wrapping the middle around your feet so it won&apos;t slip. Grasp both ends of band with elbows straight. Pull band upward and back, bending elbows. Slowly return to starting position.
+          </p>
+        <p>TIP: Keep your knees and back straight.</p>
+        <div>Reps
+            <input type="number" name="quantity" min="1" max="10"></input>
+            <p></p>
+        </div>
+        <div>
+            <input type="date" name="Workoutday">
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <div class="col-md-4" >
+      <div class="thumbnail">
+      <img src="DSC_6989.jpg" alt="Hip Abductor" style="width: 300px; height=200px;" class="img-thumbnail">
+      <div class="caption">
+        <h3> Hip Abductor </h3>
+        <p> Begin by looping the middle of the band around the ankle of the exercising leg. Place the ends of the band under the opposite foot to stabilize the band and grasp the ends in your opposite hand. Keeping your knees straight, kick your leg outward against the band. Hold and slowly return.
+        </P>
+        <p>TIP: Keep your back straight; don&apos;t lean over.</p>
+        <div>Reps
+            <input type="number" name="quantity" min="1" max="10"></input>
+            <p></p>
+        </div>
+        <div>
+            <input type="date" name="Workoutday">
+        </div>
+      </div>
+      </div>
+    </div>
 </div>
 
-<div class="row">
-  <div class="col-lg-4">
-    <p><a href="#" class="thumbnail">
-      <img src="http://www.emmywinnerchrisparker.com/blog/wp-content/uploads/2013/03/Easter-Eggs.jpg" alt="Maneaster" ></p>
-    <!-- <p><a class="chestpress" href="#">View details »</a></p> -->
-    <h2> Chest Press </h2>
-    <p> descriptive text for how to do chest press</p>
-  </div>
-</div>
-</div>
+
 </body>
 </html>
